@@ -11,10 +11,6 @@ html{
 .banner {
     width: 200vh;
     height: 50vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.281)), (rgba(0, 0, 0, 0.308)), url('banner.png');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,9 +64,9 @@ h1,h2,h3{
     color: rgb(49, 75, 131);
 }
 h4{
-    font-size: 27px;
-    margin-left: 25%;
-    margin-top: 4%;
+    font-size: 29px;
+    margin-left: 30%;
+    margin-top: 18%;
     text-decoration: underline;
     color:rgb(49, 75, 131);
 }
@@ -98,9 +94,36 @@ p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin:4% 20% 4% 20% ;
     font-size:28px;
-    text-indent:60px;
     text-align: justify;
+    text-indent: 20px;
 }
 
 
+.float-img{
+    
+   float:left;
+   max-width: 28%;
+   margin-left:4%;
+   margin-top: 4%;
+   padding-right:10px;
+   flex-direction: center;
+   
+}
+.float-img1{
+   float:right;
+   max-width: 28%;
+   margin-right:11%;
+   margin-top: 6%;
+   padding-left:11px;
+   flex-direction: center;
+}
 
+.espacamento p{
+       text-align: justify;
+       font-size: 30px;
+       margin-bottom: 40px;
+       
+}
+.instalacoes{
+    margin-top: 12%;
+}
