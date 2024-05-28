@@ -84,11 +84,42 @@ h1,h2,h3{
     color: rgb(49, 75, 131);
 }
 h4{
-    font-size: 29px;
+    font-size: 30px;
     margin-left: 30%;
     margin-top: 18%;
     text-decoration: none;
     color:rgb(49, 75, 131);
+}
+
+.consultas_h4 {
+    display: block;
+    margin: 100px;
+    border-radius: 50px;
+    background-color: rgba(51, 209, 199, 0.5);
+}
+
+.vacinacao_h4 {
+    display: block;
+    border-radius: 50px;
+    background-color: rgba(51, 209, 199, 0.5);
+}
+
+.cirurgias_h4 {
+    display: block;
+    border-radius: 50px;
+    background-color: rgba(51, 209, 199, 0.5);
+}
+
+.exame_h4 {
+    display: block;
+    border-radius: 50px;
+    background-color: rgba(51, 209, 199, 0.5);
+}
+
+.cuidados_h4 {
+    display: block;
+    border-radius: 50px;
+    background-color: rgba(51, 209, 199, 0.5);
 }
 
 #logo{
@@ -121,7 +152,7 @@ p{
 
 .float-img{
     border-radius: 45px;
-    float:left;
+    float: left;
     max-width: 28%;
     margin-left:4%;
     margin-top: 4%;
@@ -134,7 +165,7 @@ p{
 }
 .float-img1{
     border-radius: 45px;
-    float:right;
+    float: right;
     max-width: 28%;
     margin-right:11%;
     margin-top: 6%;
