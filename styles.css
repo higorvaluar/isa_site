@@ -8,20 +8,27 @@ html{
     scroll-behavior: smooth;
 }
 
+.menu {
+    width: 100%;
+}
+
 .banner {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
     width: 200vh;
-    height: 50vh;
-    display: flex;
+    display: center;
     align-items: center;
     justify-content: center;
 }
 
 .logo_site {
-    
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
 }
 
-/*Essas quatro primeiras classes são das edições do menu, elas estão com (#cabecalho) */
+/*Essas quatro primeiras classes são das edições do 3, elas estão com (#cabecalho) */
 #cabecalho {
     display: flex;
     justify-content: center;
@@ -51,6 +58,7 @@ html{
 nav {
     display: inline-flex;
 }
+
 
 /*O (.bloco) é a edições dos blocos do site*/
 
@@ -133,6 +141,10 @@ p{
     padding-left:11px;
     flex-direction: center;
 } 
+
+.float-img, .float-img1 {
+    width: 100%;
+}
 
 .espacamento p{
        text-align: justify;

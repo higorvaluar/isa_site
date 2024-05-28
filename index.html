@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Instituto de Saúde Animal</title>
     <link rel="stylesheet" href="styles.css">
@@ -11,26 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-     
-
-        <header  id="cabecalho">
-            <nav class = "nav_menu">
-                <img src="imagens/logo_comNome.png" alt="" class="logo_site">
-                <ul class = "menu">
-                    <li class="pagina1"><a href="#pagina1">Página Inicial</a></li>
-                    <li class="p1-nossos"><a href="#p1-nossos">Serviços</a></li>
-                    <li class="pagina2"><a href="#pagina2">Instalações</a></li>
-                    <li class="pagina3"><a href="#pagina3">Calendário</a></li>
-                    <li class="contato"><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="banner">
-                <img src = "imagens/banner.png">
-            </section>
-        </main>
+    <div class="icone_menu" onclick="toggleMenu()">
+        <div class="bar"</div>
+        <div class="bar"</div>
+        <div class="bar"</div>
+    </div>
+    <header  id="cabecalho">
+        <nav class = "nav_menu" id="menu_princ">
+            <img src="imagens/logo_comNome.png" alt="" class="logo_site">
+            <ul class = "menu">
+                <li class="pagina1"><a href="#pagina1">Página Inicial</a></li>
+                <li class="p1-nossos"><a href="#p1-nossos">Serviços</a></li>
+                <li class="pagina2"><a href="#pagina2">Instalações</a></li>
+                <li class="pagina3"><a href="#pagina3">Calendário</a></li>
+                <li class="contato"><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <img src = "imagens/banner.png">
+        </section>
+    </main>
     
     <section>
         <h1 id="pagina1">Bem-vindo ao Instituto de<br>Saúde Animal</h1> 
@@ -124,5 +127,6 @@
         <h1 id="redes-sociais">Redes Sociais</h1>
        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi est cupiditate maiores, dicta necessitatibus ipsa nostrum facere rem vero ab, soluta, molestiae quibusdam aliquid. Nihil voluptatem accusamus saepe commodi placeat.</p>
     </section>
+    <script src="scripts.js"></script>
 </body>
 </html>
