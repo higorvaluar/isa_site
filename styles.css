@@ -16,6 +16,11 @@ html{
     justify-content: center;
 }
 
+.logo_site {
+    
+    width: 400px;
+}
+
 /*Essas quatro primeiras classes são das edições do menu, elas estão com (#cabecalho) */
 #cabecalho {
     display: flex;
@@ -56,8 +61,15 @@ nav {
 
 
 /* Essas são as edições dos titulos h1,h2,h3 e h4 do site*/
+.nServicos {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 h1,h2,h3{
-    font-size: 28px;
+    font-size: 50px;
     margin-top: 8px;
     margin-left: 9px;
     text-align:center;
@@ -67,17 +79,17 @@ h4{
     font-size: 29px;
     margin-left: 30%;
     margin-top: 18%;
-    text-decoration: underline;
+    text-decoration: none;
     color:rgb(49, 75, 131);
 }
 
 #logo{
-   width: 100px;
+   width: 20px;
    
 }
 /*codigos das imagens do site*/
  img{ 
-     margin-bottom: 5px;
+     margin-bottom: 10px;
      max-width: 60%;
     
 }
@@ -100,23 +112,27 @@ p{
 
 
 .float-img{
+    border-radius: 45px;
+    float:left;
+    max-width: 28%;
+    margin-left:4%;
+    margin-top: 4%;
+    padding-right:10px;
+    flex-direction: center;
+    overflow: hidden; 
+    position: relative;
     
-   float:left;
-   max-width: 28%;
-   margin-left:4%;
-   margin-top: 4%;
-   padding-right:10px;
-   flex-direction: center;
    
 }
 .float-img1{
-   float:right;
-   max-width: 28%;
-   margin-right:11%;
-   margin-top: 6%;
-   padding-left:11px;
-   flex-direction: center;
-}
+    border-radius: 45px;
+    float:right;
+    max-width: 28%;
+    margin-right:11%;
+    margin-top: 6%;
+    padding-left:11px;
+    flex-direction: center;
+} 
 
 .espacamento p{
        text-align: justify;
@@ -125,5 +141,5 @@ p{
        
 }
 .instalacoes{
-    margin-top: 12%;
+    margin-top: 15%;
 }
