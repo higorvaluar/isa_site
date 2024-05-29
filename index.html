@@ -12,11 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="icone_menu" onclick="toggleMenu()">
-        <div class="bar"</div>
-        <div class="bar"</div>
-        <div class="bar"</div>
+    <!-- Barra de pesquisa -->
+    <div id = "divBusca">
+        <input type="text" id="txtBusca" placeholder="Buscar..."/>
+        <button id="btnBusca">Buscar</button>
+        <img class="imagem_busca" src ="imagens/images.jpg" alt="busca" height="30px" width="45px">
     </div>
+
+    <!-- Menu -->
     <header  id="cabecalho">
         <nav class = "nav_menu" id="menu_princ">
             <img src="imagens/logo_comNome.png" alt="" class="logo_site">
@@ -40,7 +43,7 @@
         
         <p> Somos apaixonados por promover o bem-estar e a saúde dos animais. No Instituto de Saúde Animal, combinamos expertise técnica com compaixão para oferecer os melhores serviços veterinarios e de cuidados para os nossos companheiros de quatro patas.</p>
 
-            <figure>
+            <<figure>
             <img src="https://i.pinimg.com/236x/06/cc/12/06cc12a4d720b82bd6a79d7821e83a71.jpg" width="300px" height="auto" alt="" >
             </figure>
 
@@ -116,18 +119,102 @@
 
     </section>
     <section class="bloco">
-         <h1 id="pagina3">Eventos</h1>
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis assumenda voluptatibus repudiandae amet. At delectus velit accusamus ad natus, nihil fugit quod necessitatibus! Tenetur, rerum modi tempore veritatis porro quibusdam.</p>
+         <h1 id="pagina3">Agenda</h1>
+         <p>Na nossa Agenda, você encontrará eventos diários com detalhes completos ao lado do calendário. Mantenha-se informado e organizado!</p>
 
-         <figure>
+         <!--<figure>
          <img   src="https://i.pinimg.com/236x/72/de/09/72de09584b10e7942a2944b106a54719.jpg" width="190px" heigth="auto">
-         </figure>
-
+         </figure>-->
+         <div class = "conteudo">
+            <div class = "calendario">
+                <header>
+                    <h2 class="mes" id = "mes">Maio</h2>
+                    <a class = "bt_antes" id = "antes"><</a>
+                    <a class = "bt_depois" id= "depois">></a>
+                </header>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Dom</td>
+                            <td>Seg</td>
+                            <td>Ter</td>
+                            <td>Qua</td>
+                            <td>Qui</td>
+                            <td>Sex</td>
+                            <td>Sab</td>
+                        </tr>
+                    </thead>
+                    <tbody id = "dias">
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td> 
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td> 
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td> 
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td> 
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td> 
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>6</td>
+                            <td>7</td> 
+                        </tr>
+                    </tbody>
+                </table>
+                <footer>
+                    <h2 class = "h2-calendar" id = "ano">2024</h2>
+                </footer>
+            </div>
+            <div class = "sobre-evento" id = "sobreEvento">
+                <h3 class = "h3-calendar">Detalhe do(s) Evento(s)</h3><br>
+                <p class = "p2-calendar" id = "detalhes-texto">Selecione um evento para ver os detalhes</p>
+            </div>
+        </div>
     </section>
     <section class="bloco ">
         <h1 id="redes-sociais">Redes Sociais</h1>
        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi est cupiditate maiores, dicta necessitatibus ipsa nostrum facere rem vero ab, soluta, molestiae quibusdam aliquid. Nihil voluptatem accusamus saepe commodi placeat.</p>
     </section>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -12,6 +12,48 @@ html{
     width: 100%;
 }
 
+/* Barra de pesquisa */
+
+.imagem_busca {
+    border-radius: 20px;
+}
+
+#divBusca {
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    display: flex;
+    margin-left: 63%;
+    margin-top: 32px;
+}
+#txtBusca {
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:191px;
+}
+#btnBusca {
+    border:none;
+    float:right;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#5F9EA0;
+}
+#divBusca img{
+    float: left;
+}
+
+#menu-princ {
+    width: 100%;
+}
+
 .banner {
     text-align: center;
     margin: 0 auto;
@@ -21,6 +63,11 @@ html{
     display: center;
     align-items: center;
     justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
 .logo_site {
@@ -69,57 +116,86 @@ nav {
 
 
 /* Essas são as edições dos titulos h1,h2,h3 e h4 do site*/
+/*
 .nServicos {
     text-align: center;
     font-size: 50px;
     margin-bottom: 0;
     margin-top: 0;
 }
+*/
 
 h1,h2,h3{
     font-size: 50px;
     margin-top: 8px;
-    margin-left: 9px;
+    margin-left: 10px;
     text-align:center;
     color: rgb(49, 75, 131);
 }
 h4{
+    display: block;
+    font-size: 30px;
+    margin-top: 9%;
+    margin-bottom: 10%;
+    /*
     font-size: 30px;
     margin-left: 30%;
     margin-top: 18%;
     text-decoration: none;
     color:rgb(49, 75, 131);
+    */
+}
+
+article {
+    margin-top: 12%;
 }
 
 .consultas_h4 {
     display: block;
+    margin-left: 9%;
+    margin-right: 9%;
     margin: 100px;
     border-radius: 50px;
-    background-color: rgba(51, 209, 199, 0.5);
+    background-color: rgba(51, 209, 1, 0.5);
+    margin-top: 52px;
+    margin-bottom: 100px;
 }
 
 .vacinacao_h4 {
     display: block;
+    margin-top: 170;
+    margin-left: 9%;
+    margin-right: 9%;
+    text-align: right;
     border-radius: 50px;
-    background-color: rgba(51, 209, 199, 0.5);
+    background-color: rgba(51, 209, 1, 0.5);
 }
 
 .cirurgias_h4 {
     display: block;
     border-radius: 50px;
-    background-color: rgba(51, 209, 199, 0.5);
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: rgba(51, 209, 1, 0.5);
 }
 
 .exame_h4 {
     display: block;
     border-radius: 50px;
-    background-color: rgba(51, 209, 199, 0.5);
+    background-color: rgba(51, 209, 1, 0.5);
+    margin-left: 6%;
+    text-align: right;
+    margin-right: 6%;
 }
 
 .cuidados_h4 {
     display: block;
     border-radius: 50px;
-    background-color: rgba(51, 209, 199, 0.5);
+    background-color: rgba(51, 209, 1, 0.5);
+    margin-left: 6%;
+    text-align: right;
+    margin-right: 6%;
 }
 
 #logo{
@@ -154,11 +230,9 @@ p{
     border-radius: 45px;
     float: left;
     max-width: 28%;
-    margin-left:4%;
-    margin-top: 4%;
+    margin-left:3%;
+    margin-top: 5%;
     padding-right:10px;
-    flex-direction: center;
-    overflow: hidden; 
     position: relative;
     
    
@@ -167,14 +241,13 @@ p{
     border-radius: 45px;
     float: right;
     max-width: 28%;
-    margin-right:11%;
+    margin-right:3%;
     margin-top: 6%;
     padding-left:11px;
-    flex-direction: center;
 } 
 
 .float-img, .float-img1 {
-    width: 100%;
+    width: 46%;
 }
 
 .espacamento p{
@@ -185,4 +258,230 @@ p{
 }
 .instalacoes{
     margin-top: 15%;
+}
+
+@media  (max-width:600px) {
+    
+    p,h1,h2,h3{
+      font-size: 18px;
+    }
+    li{
+      font-size: 9px;
+      
+    }
+  .consultas_h4{
+      font-size: 18px;
+  }
+  .vacinacao_h4{
+      font-size: 18px;
+  }
+  .cirurgias_h4{
+      font-size:18px ;
+  }
+  .exame_h4{
+      font-size:18px ;
+  }
+  .cuidados_h4{
+      font-size: 18px;
+  }
+   .cabecalho{
+      display:flex;
+      flex-direction: column;
+      
+   }
+    ul,li{
+    width: 18px;
+    height: 30px;
+    }
+
+ 
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  p{
+      font-size: 28px;
+  }
+}
+
+/* CSS do Calendário */
+
+/* Conteúdo */
+.conteudo {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 700px;
+    box-sizing: border-box;
+}
+.conteudo .calendario {
+    width: 60%;
+}
+.conteudo .calendario header {
+    position: 60%;
+}
+
+/* h2 universal */
+.mes {
+    color: rgba(9, 9, 67, 0.7);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+#ano {
+    color: rgba(9, 9, 67, 0.7);
+    font-size: 35px;
+    text-transform: uppercase;
+
+}
+
+/* Botões */
+.bt_antes, .bt_depois {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    border: 2px solid #00addf;
+    border-radius: 50%;
+    color: #00addf;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bt_antes {
+    left: 10px;
+}
+.bt_depois {
+    right: 10px;
+}
+.bt_antes:hover, .bt_depois:hover{
+    cursor: pointer;
+    background: #cbd1d2;
+    color: #f9f9f9;
+}
+
+/* Calendário */
+.calendario {
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.calendario header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.calendario table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+.calendario table .dia_hoje {
+    background: #00addf; 
+    color: #f9f9f9;
+}
+.calendario thead {
+    background: rgba(55, 126, 94, 0.2);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.calendario td {
+    border: 2px solid rgba(55, 126, 94, 0.2);
+    height: 80px;;
+    text-align: center;
+    width: calc(100% / 7);
+    position: relative;
+}
+.calendario tbody td {
+    cursor: pointer;
+}
+.calendario tbody td:hover {
+    background: rgba(0, 173, 223, 0.8);
+    color: #f9f9f9;
+}
+.calendario table .dia_hoje {
+    background: #00addf;
+    color: #f9f9f9;
+}
+.calendario .mes_antes, .calendario .mes_depois {
+    color: #cdb1d2;
+}
+.calendario .mes_antes:hover, .calendario .mes_depois:hover {
+    background: #98a0a0;
+}
+
+.p2-calendar {
+    font-size: 20px;
+}
+
+.h3-calendar {
+    color: rgba(9, 9, 67, 0.7);
+    font-size: 35px;
+}
+
+/* Eventos */
+.evento:after {
+    content:'';
+    width: 7px;
+    height: 7px;
+    left: 50%;
+    bottom: 7px;
+    margin: -3.5px 0 0 -3.5px;
+    background: #00addf;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+.evento:hover:after {
+    background: #f9f9f9;
+}
+.evento .dia_hoje:after {
+    background: #f9f9f9;
+}
+
+/* Parte de eventos */
+
+.resumo-evento {
+    position: absolute;
+    background: rgba(0, 175, 223, 0.14);
+    color: #002503;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 10;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.detalhe-evento {
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 400px; 
+    margin-left: 20px;
+}
+.sobre-evento {
+    width: 50%;
+    min-width: 450px;
+    padding: 0px;
+    background: rgba(232, 223, 255, 0.733);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: hidden;
+    max-height: 655px;
+    margin-left: 20px;
+}
+.sobre-evento h3 {
+    margin-top: 0;
 }
