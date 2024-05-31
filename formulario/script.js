@@ -5,5 +5,4 @@ function subscribe() {
         document.getElementById("contato").innerHTML = "<p>Inscrição realizada com sucesso!</p>";
     });
 }
-
 window.onload = subscribe;

@@ -193,6 +193,13 @@ p{
     text-indent: 20px;
 }
 
+.p_social {
+    text-align: center;
+}
+
+.link_insta {
+    text-decoration: none;
+}
 
 .float-img{
     border-radius: 45px;
@@ -202,8 +209,6 @@ p{
     margin-top: 5%;
     padding-right:10px;
     position: relative;
-    
-   
 }
 .float-img1{
     border-radius: 45px;
