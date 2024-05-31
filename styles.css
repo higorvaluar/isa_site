@@ -18,38 +18,6 @@ html{
     border-radius: 20px;
 }
 
-#divBusca {
-    background-color:#E0EEEE;
-    border:solid 2px #5F9EA0;
-    border-radius:10px;
-    width:300px;
-    height:32px;
-    display: flex;
-    margin-left: 63%;
-    margin-top: 32px;
-}
-#txtBusca {
-    float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width:191px;
-}
-#btnBusca {
-    border:none;
-    float:right;
-    height:32px;
-    border-radius:0 7px 7px 0;
-    width:70px;
-    font-weight:bold;
-    background:#5F9EA0;
-}
-#divBusca img{
-    float: left;
-}
-
 #menu-princ {
     width: 100%;
 }
