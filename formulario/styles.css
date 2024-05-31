@@ -3,6 +3,7 @@ body {
     background-size: 477px 647px;
     background-repeat: no-repeat;
     background-position: 960px 70px;
+    background-attachment: fixed;
     justify-content: center;
     margin: 0;
     display: flex;
