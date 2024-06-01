@@ -8,6 +8,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 .menu {
     width: 100%;
 }
@@ -23,7 +24,7 @@ html{
 }
 
 .banner {
-    text-align: center;
+   text-align: center;
     margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
@@ -83,16 +84,8 @@ nav {
 }
 
 
-/* Essas são as edições dos titulos h1,h2,h3 e h4 do site*/
-/*
-.nServicos {
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 0;
-    margin-top: 0;
-}
-*/
 
+/*Essa é a edição dos titulos do texto*/
 h1,h2,h3{
     font-size: 50px;
     margin-top: 8px;
@@ -105,13 +98,7 @@ h4{
     font-size: 30px;
     margin-top: 9%;
     margin-bottom: 10%;
-    /*
-    font-size: 30px;
-    margin-left: 30%;
-    margin-top: 18%;
-    text-decoration: none;
-    color:rgb(49, 75, 131);
-    */
+    
 }
 
 article {
@@ -152,24 +139,21 @@ article {
     display: block;
     border-radius: 50px;
     background-color: rgba(51, 209, 1, 0.5);
-    margin-left: 6%;
-    text-align: right;
-    margin-right: 6%;
+    margin-left: 10%;
+    text-align: center;
+    margin-right: 10%;
 }
 
 .cuidados_h4 {
     display: block;
     border-radius: 50px;
     background-color: rgba(51, 209, 1, 0.5);
-    margin-left: 6%;
-    text-align: right;
-    margin-right: 6%;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#logo{
-   width: 20px;
-   
-}
+
 /*codigos das imagens do site*/
  img{ 
      margin-bottom: 10px;
@@ -193,14 +177,7 @@ p{
     text-indent: 20px;
 }
 
-.p_social {
-    text-align: center;
-}
-
-.link_insta {
-    text-decoration: none;
-}
-
+/*Tanto o "foat-img" quanto o "float-img1" são as edições das fotos ao lado do texto*/
 .float-img{
     border-radius: 45px;
     float: left;
@@ -209,6 +186,8 @@ p{
     margin-top: 5%;
     padding-right:10px;
     position: relative;
+    
+   
 }
 .float-img1{
     border-radius: 45px;
@@ -233,47 +212,118 @@ p{
     margin-top: 15%;
 }
 
-@media  (max-width:600px) {
+.menu_celular {
+    display: none;
+}
+
+/*A respondividade dos titulos e paragrafos */
+@media  (max-width:600px) and (max-width:700px){
+
+    .conteudo {
+        display: flex;
+        flex-direction:column;
+        font-size: 13px;
+    }
     
-    p,h1,h2,h3{
-      font-size: 18px;
+    .menu {
+        display: none;
     }
-    li{
-      font-size: 9px;
-      
+
+    .menu_celular {
+        display: flex;
     }
-  .consultas_h4{
-      font-size: 18px;
+
+    .faleconosco {
+        white-space: nowrap;
+    }
+
+    .ul_cel {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -10px;
+        padding-left: 43%;
+        font-size: 13px;
+    }
+
+    .ul_cel li {
+        padding: 0 25px;
+    }
+    
+    .ul_cel a {
+        text-decoration: none;
+    }
+
+    h1,h2,h3, h4{
+      font-size: 24px;
+    }
+    p{
+        font-size: 25px;
+    }
+
+  #paragrafo1{
+    font-size: 18px;
   }
-  .vacinacao_h4{
-      font-size: 18px;
+  #paragrafo2{
+    font-size: 18px;
   }
-  .cirurgias_h4{
-      font-size:18px ;
+  #paragrafo3{
+    font-size: 18px;
   }
-  .exame_h4{
-      font-size:18px ;
+  #paragrafo4{
+    font-size: 18px;
   }
-  .cuidados_h4{
-      font-size: 18px;
+  #paragrafo5{
+    font-size: 18px;
   }
-   .cabecalho{
-      display:flex;
-      flex-direction: column;
-      
-   }
     ul,li{
     width: 18px;
     height: 30px;
     }
 
- 
+    .pe_contato {
+        font-size: 10px;
+    }
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+    .menu {
+        display: none;
+    }
+
+    .menu_celular {
+        display: flex;
+    }
+
+    .faleconosco {
+        white-space: nowrap;
+    }
+
+    .ul_cel {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-bottom: -10px;
+        padding-left: 43%;
+        font-size: 13px;
+    }
+
+    .ul_cel li {
+        padding: 0 25px;
+    }
+    
+    .ul_cel a {
+        text-decoration: none;
+    }
+
   p{
       font-size: 28px;
+  }
+
+  .pe_contato {
+    font-size: 20px;
   }
 }
 
@@ -424,7 +474,7 @@ p{
     position: absolute;
     background: rgba(0, 175, 223, 0.14);
     color: #002503;
-    padding: 5px;
+    padding: 30px;
     border-radius: 3px;
     z-index: 10;
     top: -40px;
@@ -457,4 +507,38 @@ p{
 }
 .sobre-evento h3 {
     margin-top: 0;
+}
+
+.p_social {
+    text-align: center;
+}
+
+
+/* Estilos para o rodapé */
+
+.rodape {
+    background-color: #d97a46; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto do rodapé */
+    padding: 20px 0; /* Espaçamento interno superior e inferior */
+}
+
+.container {
+    display: flex; /* Utilizamos flexbox para alinhar os elementos */
+    justify-content: space-between; /* Distribui os elementos igualmente ao longo do container */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+.logo img {
+    width: 200px; /* Largura da logo */
+}
+
+.redes-sociais img {
+    width: 30px; /* Largura dos ícones de redes sociais */
+    margin-right: 10px; /* Espaçamento entre os ícones */
+}
+
+.contatos p {
+    margin: 5px 0; /* Espaçamento entre os detalhes de contato */
 }
