@@ -13,12 +13,6 @@ html{
     width: 100%;
 }
 
-/* Barra de pesquisa */
-
-.imagem_busca {
-    border-radius: 20px;
-}
-
 #menu-princ {
     width: 100%;
 }
@@ -109,7 +103,6 @@ article {
     display: block;
     margin-left: 9%;
     margin-right: 9%;
-    margin: 100px;
     border-radius: 50px;
     background-color: rgba(51, 209, 1, 0.5);
     margin-top: 52px;
